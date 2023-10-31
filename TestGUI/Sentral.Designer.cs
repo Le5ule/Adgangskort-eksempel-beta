@@ -1,6 +1,6 @@
 ﻿namespace TestGUI
 {
-    partial class Form1
+    partial class Sentral
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,6 +30,8 @@
         {
             button1 = new Button();
             dataGridView1 = new DataGridView();
+            TB_Kombo = new TextBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -53,11 +55,31 @@
             dataGridView1.Size = new Size(539, 196);
             dataGridView1.TabIndex = 1;
             // 
+            // TB_Kombo
+            // 
+            TB_Kombo.Location = new Point(361, 75);
+            TB_Kombo.Name = "TB_Kombo";
+            TB_Kombo.ReadOnly = true;
+            TB_Kombo.Size = new Size(125, 27);
+            TB_Kombo.TabIndex = 2;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(625, 171);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 3;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(TB_Kombo);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Name = "Form1";
@@ -65,11 +87,14 @@
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
         private DataGridView dataGridView1;
+        private TextBox TB_Kombo;
+        private Button button2;
     }
 }

@@ -3,15 +3,20 @@ using System.Data;
 
 namespace TestGUI
 {
-    public partial class Form1 : Form
+    public partial class Sentral : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        Input terminal = new Input();
+        Terminal terminalUI = new Terminal();
+
         string vstrConnection = "server=129.151.221.119 ; port=5432 ; user id=596237 ; password=Ha1FinDagIDag! ; database=596237 ;";
         NpgsqlConnection vCon;
         NpgsqlCommand vCmd;
+
+        public Sentral()
+        {
+            InitializeComponent();
+        }
+
         private void connection()
         {
             vCon = new NpgsqlConnection();
@@ -46,6 +51,14 @@ namespace TestGUI
             dtgetData = getData("select * from ansatt0;");
 
             dataGridView1.DataSource = dtgetData;
+
+            terminalUI.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //TB_Kombo.Text = terminal.Kombo();
+            TB_Kombo.Text = Input.kombo;
         }
     }
 }
