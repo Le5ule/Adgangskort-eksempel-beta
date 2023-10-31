@@ -6,7 +6,7 @@ namespace TestGUI
     public partial class Sentral : Form
     {
         Input terminal = new Input();
-        Terminal terminalUI = new Terminal();
+        //Terminal terminalUI = new Terminal();
 
         string vstrConnection = "server=129.151.221.119 ; port=5432 ; user id=596237 ; password=Ha1FinDagIDag! ; database=596237 ;";
         NpgsqlConnection vCon;
@@ -52,7 +52,7 @@ namespace TestGUI
 
             dataGridView1.DataSource = dtgetData;
 
-            terminalUI.Show();
+            //terminalUI.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

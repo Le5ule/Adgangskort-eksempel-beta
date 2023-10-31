@@ -73,7 +73,7 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Form1
+            // Sentral
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -82,8 +82,8 @@
             Controls.Add(TB_Kombo);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Sentral";
+            Text = "Sentral";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
