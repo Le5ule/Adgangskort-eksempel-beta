@@ -38,7 +38,6 @@
             BTN3 = new Button();
             BTN2 = new Button();
             BTN1 = new Button();
-            BTN_kort = new Button();
             TB_KomboTerm = new TextBox();
             SuspendLayout();
             // 
@@ -142,30 +141,20 @@
             BTN1.UseVisualStyleBackColor = true;
             BTN1.Click += BTN1_Click;
             // 
-            // BTN_kort
-            // 
-            BTN_kort.Location = new Point(39, 43);
-            BTN_kort.Name = "BTN_kort";
-            BTN_kort.Size = new Size(101, 26);
-            BTN_kort.TabIndex = 25;
-            BTN_kort.Text = "*Tap kort*";
-            BTN_kort.UseVisualStyleBackColor = true;
-            // 
             // TB_KomboTerm
             // 
-            TB_KomboTerm.Location = new Point(280, 157);
+            TB_KomboTerm.Location = new Point(39, 39);
             TB_KomboTerm.Name = "TB_KomboTerm";
             TB_KomboTerm.ReadOnly = true;
-            TB_KomboTerm.Size = new Size(125, 27);
+            TB_KomboTerm.Size = new Size(77, 27);
             TB_KomboTerm.TabIndex = 26;
             // 
             // Terminal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(158, 249);
             Controls.Add(TB_KomboTerm);
-            Controls.Add(BTN_kort);
             Controls.Add(BTN0);
             Controls.Add(BTN9);
             Controls.Add(BTN8);
@@ -194,7 +183,6 @@
         private Button BTN3;
         private Button BTN2;
         private Button BTN1;
-        private Button BTN_kort;
         private TextBox TB_KomboTerm;
     }
 }

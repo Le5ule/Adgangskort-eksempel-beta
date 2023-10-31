@@ -37,11 +37,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(625, 112);
+            button1.Location = new Point(76, 152);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Les DB";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -65,11 +65,11 @@
             // 
             // button2
             // 
-            button2.Location = new Point(625, 171);
+            button2.Location = new Point(261, 73);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 3;
-            button2.Text = "button2";
+            button2.Text = "Vis kode";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
