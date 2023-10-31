@@ -8,7 +8,7 @@ namespace TestGUI
         Input terminal = new Input();
         //Terminal terminalUI = new Terminal();
 
-        string vstrConnection = "server=129.151.221.119 ; port=5432 ; user id=596237 ; password=Ha1FinDagIDag! ; database=596237 ;";
+        string vstrConnection = "server=129.151.221.119 ; port=5432 ; user id=12345 ; password= ; database= ;";
         NpgsqlConnection vCon;
         NpgsqlCommand vCmd;
 
