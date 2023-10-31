@@ -30,7 +30,6 @@ namespace TestGUI
                 //this.Hide();
                 sentralUI.Show();
                 autentisering.Kode().Clear();
-                
             }
         }
 
