@@ -52,7 +52,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(539, 196);
+            dataGridView1.Size = new Size(824, 281);
             dataGridView1.TabIndex = 1;
             // 
             // TB_Kombo
@@ -77,7 +77,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1006, 526);
             Controls.Add(button2);
             Controls.Add(TB_Kombo);
             Controls.Add(dataGridView1);
