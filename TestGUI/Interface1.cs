@@ -8,6 +8,6 @@ namespace TestGUI
 {
     internal interface Interface1
     {
-        bool Godkjenning(string user);
+        bool godkjenning(string user);
     }
 }

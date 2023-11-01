@@ -32,6 +32,7 @@
             dataGridView1 = new DataGridView();
             TB_Kombo = new TextBox();
             button2 = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(539, 196);
+            dataGridView1.Size = new Size(824, 281);
             dataGridView1.TabIndex = 1;
             // 
             // TB_Kombo
@@ -73,11 +74,20 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(571, 75);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 4;
+            textBox1.KeyPress += textBox1_KeyPress;
+            // 
             // Sentral
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1006, 526);
+            Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(TB_Kombo);
             Controls.Add(dataGridView1);
@@ -96,5 +106,6 @@
         private DataGridView dataGridView1;
         private TextBox TB_Kombo;
         private Button button2;
+        private TextBox textBox1;
     }
 }

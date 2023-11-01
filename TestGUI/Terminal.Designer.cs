@@ -39,11 +39,14 @@
             BTN2 = new Button();
             BTN1 = new Button();
             TB_KomboTerm = new TextBox();
+            BTN_Kort = new Button();
+            UgyldigLabel = new Label();
+            TB_KortInput = new TextBox();
             SuspendLayout();
             // 
             // BTN0
             // 
-            BTN0.Location = new Point(66, 187);
+            BTN0.Location = new Point(53, 229);
             BTN0.Name = "BTN0";
             BTN0.Size = new Size(23, 25);
             BTN0.TabIndex = 24;
@@ -53,7 +56,7 @@
             // 
             // BTN9
             // 
-            BTN9.Location = new Point(93, 159);
+            BTN9.Location = new Point(80, 201);
             BTN9.Name = "BTN9";
             BTN9.Size = new Size(23, 25);
             BTN9.TabIndex = 23;
@@ -63,7 +66,7 @@
             // 
             // BTN8
             // 
-            BTN8.Location = new Point(66, 159);
+            BTN8.Location = new Point(53, 201);
             BTN8.Name = "BTN8";
             BTN8.Size = new Size(23, 25);
             BTN8.TabIndex = 22;
@@ -73,7 +76,7 @@
             // 
             // BTN7
             // 
-            BTN7.Location = new Point(39, 159);
+            BTN7.Location = new Point(26, 201);
             BTN7.Name = "BTN7";
             BTN7.Size = new Size(23, 25);
             BTN7.TabIndex = 21;
@@ -83,7 +86,7 @@
             // 
             // BTN6
             // 
-            BTN6.Location = new Point(93, 130);
+            BTN6.Location = new Point(80, 172);
             BTN6.Name = "BTN6";
             BTN6.Size = new Size(23, 25);
             BTN6.TabIndex = 20;
@@ -93,7 +96,7 @@
             // 
             // BTN5
             // 
-            BTN5.Location = new Point(66, 130);
+            BTN5.Location = new Point(53, 172);
             BTN5.Name = "BTN5";
             BTN5.Size = new Size(23, 25);
             BTN5.TabIndex = 19;
@@ -103,7 +106,7 @@
             // 
             // BTN4
             // 
-            BTN4.Location = new Point(39, 130);
+            BTN4.Location = new Point(26, 172);
             BTN4.Name = "BTN4";
             BTN4.Size = new Size(23, 25);
             BTN4.TabIndex = 18;
@@ -113,7 +116,7 @@
             // 
             // BTN3
             // 
-            BTN3.Location = new Point(93, 101);
+            BTN3.Location = new Point(80, 143);
             BTN3.Name = "BTN3";
             BTN3.Size = new Size(23, 25);
             BTN3.TabIndex = 17;
@@ -123,7 +126,7 @@
             // 
             // BTN2
             // 
-            BTN2.Location = new Point(66, 101);
+            BTN2.Location = new Point(53, 143);
             BTN2.Name = "BTN2";
             BTN2.Size = new Size(23, 25);
             BTN2.TabIndex = 16;
@@ -133,7 +136,7 @@
             // 
             // BTN1
             // 
-            BTN1.Location = new Point(39, 101);
+            BTN1.Location = new Point(26, 143);
             BTN1.Name = "BTN1";
             BTN1.Size = new Size(23, 25);
             BTN1.TabIndex = 15;
@@ -143,17 +146,48 @@
             // 
             // TB_KomboTerm
             // 
-            TB_KomboTerm.Location = new Point(39, 39);
+            TB_KomboTerm.Location = new Point(152, 61);
             TB_KomboTerm.Name = "TB_KomboTerm";
-            TB_KomboTerm.ReadOnly = true;
             TB_KomboTerm.Size = new Size(77, 27);
             TB_KomboTerm.TabIndex = 26;
+            // 
+            // BTN_Kort
+            // 
+            BTN_Kort.Location = new Point(26, 70);
+            BTN_Kort.Name = "BTN_Kort";
+            BTN_Kort.Size = new Size(77, 34);
+            BTN_Kort.TabIndex = 27;
+            BTN_Kort.Text = "Les kort";
+            BTN_Kort.UseVisualStyleBackColor = true;
+            BTN_Kort.Click += BTN_Kort_Click;
+            // 
+            // UgyldigLabel
+            // 
+            UgyldigLabel.AutoSize = true;
+            UgyldigLabel.Location = new Point(17, 17);
+            UgyldigLabel.Name = "UgyldigLabel";
+            UgyldigLabel.Size = new Size(102, 40);
+            UgyldigLabel.TabIndex = 28;
+            UgyldigLabel.Text = "Ugyldig input,\r\nprøv igjen";
+            UgyldigLabel.Visible = false;
+            // 
+            // TB_KortInput
+            // 
+            TB_KortInput.AcceptsReturn = true;
+            TB_KortInput.Location = new Point(26, 110);
+            TB_KortInput.Name = "TB_KortInput";
+            TB_KortInput.Size = new Size(77, 27);
+            TB_KortInput.TabIndex = 29;
+            TB_KortInput.Visible = false;
             // 
             // Terminal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(158, 249);
+            ClientSize = new Size(280, 295);
+            Controls.Add(TB_KortInput);
+            Controls.Add(UgyldigLabel);
+            Controls.Add(BTN_Kort);
             Controls.Add(TB_KomboTerm);
             Controls.Add(BTN0);
             Controls.Add(BTN9);
@@ -167,6 +201,7 @@
             Controls.Add(BTN1);
             Name = "Terminal";
             Text = "Terminal";
+            Load += Terminal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -184,5 +219,8 @@
         private Button BTN2;
         private Button BTN1;
         private TextBox TB_KomboTerm;
+        private Button BTN_Kort;
+        private Label UgyldigLabel;
+        private TextBox TB_KortInput;
     }
 }

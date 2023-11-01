@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,9 +10,10 @@ namespace TestGUI
     internal class Input : Interface1
     {
         List<int> kode = new List<int>();
-        public static string kombo = "4";
+        public static string kombo = "";
+        public static int pin;
 
-        public bool Godkjenning(string user)
+        public bool godkjenning(string user)
         {
             bool svar = false;
             if (svar == false)
@@ -34,6 +36,10 @@ namespace TestGUI
         public string Kombo()
         {
             return kombo;
+        }
+        public int Pin()
+        {
+            return pin;
         }
     }
 }
