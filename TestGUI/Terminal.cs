@@ -17,6 +17,8 @@ namespace TestGUI
         Input autentisering = new Input();
         Sentral sentralUI = new Sentral();
 
+        static string ehm = "";
+
         public Terminal()
         {
             InitializeComponent();
